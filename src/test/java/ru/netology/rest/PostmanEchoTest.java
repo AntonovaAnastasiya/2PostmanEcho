@@ -19,7 +19,7 @@ public class PostmanEchoTest {
                 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data",equalTo("some data"))
+                .body("data",equalTo("nothing"))
         ;
     }
 
@@ -36,7 +36,7 @@ public class PostmanEchoTest {
                 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data",equalTo("12"))
+                .body("data",equalTo("18"))
         ;
     }
 
@@ -54,7 +54,7 @@ public class PostmanEchoTest {
                 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data",equalTo("Нетология"))
+                .body("data",equalTo("Нетолог"))
         ;
     }
 
@@ -71,7 +71,7 @@ public class PostmanEchoTest {
                 // Проверки
                 .then()
                 .statusCode(200)
-                .body("headers.content-length", equalTo("5"))
+                .body("headers.content-length", equalTo("8"))
         ;
     }
 }
